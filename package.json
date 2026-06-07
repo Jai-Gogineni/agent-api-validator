@@ -1,0 +1,24 @@
+{
+  "name": "agent-api-validator",
+  "version": "1.0.0",
+  "description": "Autonomous API validation agent — reads your spec, generates tests, executes them",
+  "main": "dist/agent.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/agent.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "api-testing", "openapi", "validation", "agent"],
+  "author": "Jai Gogineni",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "yaml": "^2.3.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
